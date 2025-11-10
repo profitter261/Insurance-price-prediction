@@ -1,6 +1,7 @@
-# --- Core build tools (fixes distutils missing in Python 3.13) ---
-setuptools==70.0.0
-wheel>=0.43.0
+# --- Build environment compatibility ---
+setuptools==75.6.0
+wheel>=0.44.0
+setuptools-distutils==3.2.1   # <-- this restores distutils on Python 3.13
 
 # --- Streamlit app dependencies ---
 streamlit==1.39.0
