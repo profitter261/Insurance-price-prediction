@@ -1,7 +1,10 @@
-# --- Build environment compatibility ---
+# --- Core build tools ---
 setuptools==75.6.0
 wheel>=0.44.0
-setuptools-distutils==3.2.1   # <-- this restores distutils on Python 3.13
+pip>=24.0
+
+# Temporary backport for distutils removal in Python ≥3.12
+distutils-py==0.1.1
 
 # --- Streamlit app dependencies ---
 streamlit==1.39.0
